@@ -6,6 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
+.profile{
+  height: 40px;
+  width: 40px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
