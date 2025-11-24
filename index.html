@@ -3,145 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="files/favicon.ico">
-
-    <title>Michelle Qiu</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Nunito', serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 1.4;
-            color: #333;
-            max-width: 95%;
-            margin: 0 auto;
-            padding-top: 0%;
-            padding-bottom: 0%;
-            margin-top:3%;
-        }
-        header {
-            font-family: 'Nunito', serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-            font-weight: 400;
-            background-color: #f4f4f4;
-            text-align: left;
-            padding-left:5%;
-            display: flex;          
-            align-items: center;   
-            padding-bottom:1%;
-            padding-top:1%
-        }
-        footer {
-            padding-top:2%;
-            font-family: 'Nunito', serif;
-            font-size:13px;
-        }
-        .header-text {
-            flex: 1;  
-            margin-left: 5%;
-            line-height: 1;
-        }
-
-        h1 {
-            color: #2c3e50;
-            font-size:xx-large;
-            margin-bottom:1%;
-
-        }
-        h2 {
-            color: #34495e;
-            font-size:large;
-            line-height: 1;
-            margin-bottom: 0;
-            margin-top:0;
-
-        }
-        
-        p {
-            margin-top: 1%;
-        }
-
-        .section {
-            margin-top:2%;
-            margin-bottom: 0%;
-            padding-left: 5%;
-            padding-right:5%
-        }
-        
-        img{
-            border-radius:50%;
-            width:11%;
-            height:11%;
-
-        }
-
-        .tab4 {
-            display: inline-block; 
-            margin-left: 3%;
-        }
-        .education{
-            justify-content: space-between; 
-            display: flex;          
-        }
-        a {
-            color: #2a5db0; 
-        }
-        a:link { 
-            color: #2a5db0; 
-        }
-        a:visited { 
-            color: #572ab0
-        }
-        a:hover {  
-            color: #357abd;
-        }
-       
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Michelle Qiu's Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <img class="profile" src="files/photo.jpg"></img>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">home</a></li>
+      <li><a href="research.html">research</a></li>
+      <li><a href="cv.html">cv</a></li>
+    </ul>
+  </nav>
 
-        <div class="header-text">
-            <h1>Michelle Qiu</h1>
-            <h2><strong>Undergraduate at Duke University</strong></h2>
-        </div>
+  <div class="page-layout">
+    <iframe src="sidebar.html" class="sidebar-frame"></iframe>
 
-    </header>
+    <main class="main-content">
+      <h2>About Me</h2>
+      <p>
+        I am a Ph.D. student in Computer Science and Engineering at the University of Michigan, working with <a href="https://websites.umich.edu/~wiensj/">Dr. Jenna Wiens</a> in the <a href="https://wiens-group.engin.umich.edu/team/">Machine Learning for Data-Driven Decisions Lab (MLD3)</a>. I am broadly interested in machine learning methods for healthcare applications and improving robustness to gameability in deployable algorithms, though my previous work has spanned natural language processing, poetry generation, computational social science, and more.
+      </p>
+      <br>
+      <p>
+       Previously, I graduated with my B.S. from Duke University, where I studied Computer Science (with a concentration in Machine Learning/Artificial Intelligence), Sociology, and Mathematics. There, I was fortunate to be advised by <a href="https://users.cs.duke.edu/~cynthia/home.html">Dr. Cynthia Rudin</a> and <a href="https://www.chrisbail.net/">Dr. Christopher Bail</a>. 
+      </p>
+    </main>
+  </div>
 
-    <div class="section">
-        <h2>About Me</h2>
-        <p>Hi! I am a senior studying Computer Science, Sociology, and Mathematics. I am currently applying to Computer Science PhD programs, and am broadly interested in finding ways to analyze/generate text that are unbiased and relatively reliable. I am also passionate about understanding how humans interact with LLMs in the wild and developing NLP applications that can address societal challenges. See more info on my past experiences <a target="_blank" href="files/CV.pdf">here</a>.  </p>
-    </div>
-
-    <div class="section">
-        <h2>Education</h2>
-            <p class="education"><span>B.S. in Computer Science (Concentration in AI/ML), B.A. in Sociology</span>
-            <span><strong>Duke University (Spring 2025)</strong></span></p>
-        
-    </div>
-
-    <div class="section">
-        <h2>Publications</h2>
-        <p>Agnew, E*, Qiu, M.*, Zhu, L.*, Wiseman, S., & Rudin, C. (2023, July). <a target="_blank" href="https://aclanthology.org/2023.acl-short.140.pdf">The Mechanical Bard: An Interpretable
-                Machine Learning Approach to Shakespearean Sonnet Generation.</a> In Proceedings of the 61st Annual Meeting of
-                the Association for Computational Linguistics (Volume 2: Short Papers) (pp. 1627-1638) 
-                <br ><a target="_blank" href="https://2023.aclweb.org/program/best_papers/"><i><span class="tab4">Outstanding Paper Award</span></i></a></br>
-            </p>
-    </div>
-
-    <div class="section">
-        <h2>Feel free to reach out here: <a href="mailto:michelle.qiu@duke.edu">michelle.qiu@duke.edu</a></h2>
-    </div>
+  <footer>
+    <p>&copy; 2025 Michelle Qiu. All rights reserved.</p>
+  </footer>
 </body>
-<footer>
-    <div className="footer">
-    <p>© Copyright 2024 Michelle Qiu. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer"><strong>GitHub Pages</strong></a> and coded <a href="https://github.com/michelle-qiu/michelle-qiu.github.io/" target="_blank" rel="noopener noreferrer"><strong> here</strong></a>.
-    </p>   
-    </div>
-</footer> 
 </html>

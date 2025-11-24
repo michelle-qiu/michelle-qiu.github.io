@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+  font-size:20px;
+
+}
+container{
+  background-color: #f4f4f4;
+  width: 90%;
+  height:90%
+}
+
+body {
+  font-family: 'Alegreya', serif;
+  background-color: #f4f4f4;
+  color: #4969a9;
+}
+h2{
+  font-family: 'Alegreya', serif;
+  color: #4969a9;
+  font-weight: 200;
+  font-size: 25px;
+}
+h1{
+  font-family: 'Alegreya', serif;
+  color: #4969a9;
+  font-weight: 200;
+  font-size: 30px;
+}
+/* Navigation bar */
+nav {
+  background-color: #f4f4f4;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #4969a9;
+  text-decoration: none;
+  padding: 15px 25px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #4969a9a3;
+  color:#f4f4f4
+}
+
+
+/* Page layout */
+.page-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar-frame {
+  width: 260px;
+  height: 100vh;
+  border: none;
+  overflow: hidden;
+}
+
+.sidebar {
+  background: white;
+  color: #4969a9;
+  text-align: center;
+  padding: 30px 15px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.sidebar h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.sidebar p {
+  opacity: 0.9;
+}
+
+.contact {
+  margin-top: 20px;
+  color:#4969a9;
+}
+
+.contact a {
+  color: #4969a9;
+  text-decoration: underline;
+}
+
+/* Social icons */
+.social-icons{
+  padding-top:5%;
+  
+}
+.social-icons a, i{
+  color: #4969a9; /* your preferred color */
+
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background-color: white;
+  box-shadow: inset 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #4969a9;
+  border-bottom: 3px solid #4969a9;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #4969a9a3;
+  color: white;
+  padding: 15px;
+}
